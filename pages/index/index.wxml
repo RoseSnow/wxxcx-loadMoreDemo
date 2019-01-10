@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+
+  <!-- 显示当前位置 -->
+  <!-- <text class="user-location" >{{name}}\n\n{{address}}</text>
+
+  <view class="usermotto">
+    <button type="primary" class="user-motto" bindtap="getMyLocation">{{motto}}</button>
+  </view> -->
+
+  <!-- 点我获取图片 -->
+  <view class="image">
+    <button type="warn" bindtap="bindViewTap" >点我获取美女图片</button>
+  </view>
+</view>

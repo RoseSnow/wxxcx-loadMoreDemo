@@ -1,0 +1,10 @@
+<scroll-view bindscrolltolower="loadMore" bindscrolltoupper="updateMore" scroll-y="true" style="height: {{windowHeight}}px">
+    <view class="img-list">
+        <view class='item' wx:for="{{ list }}" wx:key="item.createdAt">
+            <image src="{{item.url}}" mode="scaleToFill"></image>
+        </view>
+    </view>
+    <view class="loading">
+        <loading hidden="{{hidden}}">加载中...</loading>
+    </view>
+</scroll-view>
