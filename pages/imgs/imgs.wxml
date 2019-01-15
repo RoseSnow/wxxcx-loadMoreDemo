@@ -1,4 +1,4 @@
-<scroll-view bindscrolltolower="loadMore" bindscrolltoupper="updateMore" scroll-y="true" style="height: {{windowHeight}}px">
+<scroll-view bindscrolltolower="loadMore" scroll-y="true" style="height: {{windowHeight}}px">
     <view class="img-list">
         <view class='item' wx:for="{{ list }}" wx:key="item.createdAt">
             <image src="{{item.url}}" mode="scaleToFill"></image>
